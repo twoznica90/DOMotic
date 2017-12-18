@@ -10,7 +10,7 @@ The main frame displays a picture of the house with DOM elements that visually r
 
 Rendering is fully responsive and was tested with Firefox, Chrome and Edge. The side panel plugin is not well handled by IE.
 
-Sound effects are using mp3 files found here : http://www.orangefreesounds.com/button-click-sound/
+Sound effects are using mp3 files found here : http://www.orangefreesounds.com/
 
 
 ## Use and extension

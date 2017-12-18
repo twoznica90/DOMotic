@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DOMotic</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Thomas Woznica">
+    <meta name="description" content="A Javascript webapp simulating house automation.">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/side-panel.css">
+    <link rel="stylesheet" href="css/switch.css">
+
+    <link rel="stylesheet" href="css/windows.css">
+    <link rel="stylesheet" href="css/curtains.css">
+    <link rel="stylesheet" href="css/temp-ctrl.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="side-panel">
+        <div id="slider">
+
+            <h3>Upstairs</h3>
+
+            <img id="upstairs-switch" class="btn-ico" src="assets/light-ctrl.png" alt="Switch" />
+
+            <img id="upstairs-curtain-button" class="btn-ico" src="assets/shade-ctrl.png" alt="Curtain" />
+
+            <br>
+            <br>
+
+            <h3>Living room</h3>
+
+            <img id="living-room-switch" class="btn-ico" src="assets/light-ctrl.png" alt="Switch" />
+
+            <img id="living-room-curtain-button" class="btn-ico" src="assets/shade-ctrl.png" alt="Curtain" />
+
+            <br>
+            <br>
+            <br>
+
+            <div id="temp-ctrl" class="btn-ico">
+                <img src="assets/temp-ctrl.png" alt="Temperature" />
+
+                <button class="temp-up-button temp-button"></button>
+                <button class="temp-down-button temp-button"></button>
+                <div class="temp-digits">
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <button id="trigger">Toggle Control Panel</button>
+
+
+
+
+
+    <div class="background">
+
+
+
+        <img class="house" src="assets/house.jpg" alt="Background" />
+
+
+        <div id="living-room-window" class="off">
+            <div id="frame-1" class="frame"></div>
+            <div id="frame-2" class="frame"></div>
+            <div id="frame-3" class="frame"></div>
+        </div>
+
+        <div id="upstairs-window" class="off">
+            <div id="frame-1" class="frame"></div>
+            <div id="frame-2" class="frame"></div>
+            <div id="frame-3" class="frame"></div>
+        </div>
+
+
+
+        <div id="living-room-curtain">
+        </div>
+
+        <div id="upstairs-curtain">
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="js/jquery.slidereveal.min.js"></script>
+    <script src="js/init-slider.js"></script>
+
+    <script src="js/lights.js"></script>
+    <script src="js/sounds.js"></script>
+    <script src="js/curtains.js"></script>
+    <script src="js/temperature.js"></script>
+    <script src="js/controller.js"></script>
+
+    <script src="js/server.js"></script>
+    <script src="js/init_server.js"></script>
+
+
+</body>
+
+
+</html>

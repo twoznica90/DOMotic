@@ -1,0 +1,45 @@
+/* Both windows have the same aspect ratio, with 3 frames each*/
+
+#living-room-window {
+    position: absolute;
+    top: 40.5%;
+    left: 9.9%;
+    height: 9.2%;
+    width: 7.0%;
+}
+
+#living-room-window > div {
+    position: absolute;
+    background-color: white;
+}
+
+#upstairs-window {
+    position: absolute;
+    top: 21.2%;
+    left: 11.0%;
+    height: 5.6%;
+    width: 4.6%;
+}
+
+#upstairs-window > div {
+    position: absolute;
+    background-color: white;
+}
+
+
+.frame {
+    width: 24%;
+    height: 100%;
+}
+
+#frame-1 {
+    left: 0%;
+}
+
+#frame-2 {
+    left: 38%;
+}
+
+#frame-3 {
+    left: 75%;
+}

@@ -1,0 +1,20 @@
+body {
+    margin: 10;
+    max-width: 100%;
+    height: auto;
+}
+
+.house {
+    vertical-align: text-top;
+}
+
+/*Responsive*/
+
+.background .house {
+    max-width: 100%;
+
+}
+
+.background {
+    position: relative;
+}

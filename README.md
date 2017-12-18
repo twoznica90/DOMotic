@@ -1,7 +1,7 @@
 # DOMotic
 A webapp using jQuery simulating a few household appliances automation.
 
-##Description
+## Description
 
 This webapp was developped from scratch with Brackets. It features a basic control panel, opening in a side panel that can be flipped, using a jQuery plugin found here : https://nnattawat.github.io/slideReveal/. This panel contains buttons to control lights and curtains in the living room and the room upstairs, as well as a temperature control and display.
 
@@ -13,7 +13,7 @@ Rendering is fully responsive and was tested with Firefox, Chrome and Edge. The 
 Sound effects are using mp3 files found here : http://www.orangefreesounds.com/button-click-sound/
 
 
-##Use and extension
+## Use and extension
 
 Appliances are implemented as components, with a script implementing their behaviour and a css file describing their aspect. A script called #controller.js# handles user actions on controls and binds them to the home components (lights, curtains, temperature). 
 

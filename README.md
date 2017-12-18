@@ -15,11 +15,11 @@ Sound effects are using mp3 files found here : http://www.orangefreesounds.com/b
 
 ## Use and extension
 
-Appliances are implemented as components, with a script implementing their behaviour and a css file describing their aspect. A script called #controller.js# handles user actions on controls and binds them to the home components (lights, curtains, temperature). 
+Appliances are implemented as components, with a script implementing their behaviour and a css file describing their aspect. A script called **controller.js** handles user actions on controls and binds them to the home components (lights, curtains, temperature). 
 
-Each component gets and updates its status values through server requests, which is simulated by a static JSON file in the script *init\_server.js*. For this reason, the project files (index.html and associated files and folders) must be placed in the docroot of a plain HTTP webserver. If the index.html is opened in a browser from the filesystem, this communication could fail with some browsers (it doesn't with Firefox, which can hence be used for quick demo). Server updates are handled through POST requests, not simulated as data persistence is not required.
+Each component gets and updates its status values through server requests, which is simulated by a static JSON file in the script **init\_server.js**. For this reason, the project files (index.html and associated files and folders) must be placed in the docroot of a plain HTTP webserver. If the index.html is opened in a browser from the filesystem, this communication could fail with some browsers (it doesn't with Firefox, which can hence be used for quick demo). Server updates are handled through POST requests, not simulated as data persistence is not required.
 
-Adding a component requires then to add a script, a stylesheet, a few divs in the index and to update the *controller.js* and *init\_server* scripts.
+Adding a component requires then to add a script, a stylesheet, a few divs in the index and to update the **controller.js** and **init\_server** scripts.
 
 
 

@@ -19,7 +19,7 @@ Appliances are implemented as components, with a script implementing their behav
 
 Each component gets and updates its status values through server requests, which is simulated by a static JSON file in the script *init\_server.js*. For this reason, the project files (index.html and associated files and folders) must be placed in the docroot of a plain HTTP webserver. If the index.html is opened in a browser from the filesystem, this communication could fail with some browsers (it doesn't with Firefox, which can hence be used for quick demo). Server updates are handled through POST requests, not simulated as data persistence is not required.
 
-Adding components requires then to add a script, a stylesheet, a few divs in the index and to update the *controller.js* and *init\_server* scripts.
+Adding a component requires then to add a script, a stylesheet, a few divs in the index and to update the *controller.js* and *init\_server* scripts.
 
 
 

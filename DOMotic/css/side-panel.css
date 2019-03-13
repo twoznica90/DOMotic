@@ -1,16 +1,16 @@
 /*Side panel styling */
+
 .side-panel {
-    
     font-family: 'Verdana', sans-serif;
     width: auto\9;  /* ie8 */
     vertical-align: text-top;
     position: relative;
 }
 
-.btn-ico {
+.button {
     opacity: 0.5;
 }
 
-.btn-ico:hover {
+.button:hover {
     opacity: 1;
 }

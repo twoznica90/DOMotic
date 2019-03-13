@@ -1,5 +1,5 @@
-{"temperature" : "18",
- "lr_light" : false,
+{"temperature" : 19,
  "u_light" : false,
- "lr_curtain" : false,
- "u_curtain" : false}
+ "d_light" : true,
+ "u_curtain" : false,
+ "d_curtain" : false}

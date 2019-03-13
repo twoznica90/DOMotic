@@ -1,36 +1,44 @@
 // Temperature Control Component
 
-TempCtrl = (function () {
+TempCtrl = function (params) {
 
     var CONST = {
         TEMP_MIN : 4,
         TEMP_MAX : 25
     }
     
-    var temp = 17;
+    var temp;
+    
+    var init = function(){
+        // Set initial value
+        set(params.value);
+    };
 
-    var up = function () {
+    function up() {
         if (temp < CONST.TEMP_MAX)
         {
             temp++;
             $('.temp-digits span').text(formatTemp(temp));
         }
-    };
+    }
 
-    var down = function () {
+    function down() {
         if (temp > CONST.TEMP_MIN)
         {
             temp--;
             $('.temp-digits span').text(formatTemp(temp));
         }
-    };
+    }
 
-    var set = function (value) {
+    function set(value) {
         $('.temp-digits span').text(formatTemp(value));
-    };
+    }
 
+    
     function formatTemp(val) {
         temp = val;
+        
+        // Send the set value to the server
         Server.send("temperature", temp);
         
         if (temp < 10) {
@@ -38,15 +46,14 @@ TempCtrl = (function () {
         } else {
             return temp + "°C";
         }
-        // 
-        
     }
 
 
     return {
+        init: init,
         up: up,
         down: down,
         set: set
     }
 
-})();
+};

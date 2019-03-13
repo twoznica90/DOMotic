@@ -1,27 +1,35 @@
 // Curtain Component
 
-CurtainsCtrl = (function () {
+CurtainsCtrl = function (params) {
 
-    var DURATION_MS = 3000;
-
-    var toggle = function (elmt) {
-        $('#' + elmt).slideToggle(DURATION_MS);
+    var init = function () {
+        // Close curtain if initial value is true
+        if (params.value) {
+            close(params.element);
+        }
     };
 
+    function toggle(elmt) {
+        SoundCtrl.windingSound();
+        $('#' + elmt).slideToggle(SoundCtrl.WINDING_DURATION_MS);
+    }
 
-    var open = function (elmt) {
-        $('#' + elmt).slideUp(DURATION_MS);
-    };
 
-    var close = function (elmt) {
-        $('#' + elmt).slideDown(DURATION_MS);
-    };
+    function open(elmt) {
+        SoundCtrl.windingSound();
+        $('#' + elmt).slideUp(SoundCtrl.WINDING_DURATION_MS);
+    }
+
+    function close(elmt) {
+        SoundCtrl.windingSound();
+        $('#' + elmt).slideDown(SoundCtrl.WINDING_DURATION_MS);
+    }
 
 
     return {
+        init: init,
+        toggle: toggle,
         open: open,
-        close: close,
-        toggle: toggle
+        close: close
     }
-
-})();
+};

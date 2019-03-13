@@ -12,15 +12,15 @@
     left: 76px;
 }
 
-#temp-ctrl .temp-up-button {
+.temp-up-button {
     top: 15px;
 }
 
-#temp-ctrl .temp-down-button {
+.temp-down-button {
     top: 75px;
 }
 
-#temp-ctrl .temp-digits {
+.temp-digits {
     position: absolute;
     top: 100px;
     left: 79px;

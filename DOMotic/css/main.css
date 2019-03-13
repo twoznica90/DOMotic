@@ -8,11 +8,10 @@ body {
     vertical-align: text-top;
 }
 
-/*Responsive*/
+/*Background image is responsive*/
 
 .background .house {
     max-width: 100%;
-
 }
 
 .background {
